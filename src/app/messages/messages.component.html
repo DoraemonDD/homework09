@@ -1,0 +1,7 @@
+<div class="col-sm-5">
+  <div *ngIf="messageService.messages.length" class="card card-body">
+    <h2>Message</h2>
+    <button class="clear btn btn-danger" (click)="messageService.clear()">clear</button>
+    <div *ngFor='let message of messageService.messages'>{{message}}</div>
+  </div>
+</div>

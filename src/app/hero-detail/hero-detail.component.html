@@ -1,0 +1,15 @@
+<div class="col-5">
+  <div class="card card-body">
+    <div *ngIf="hero">
+      <h2>{{hero.name | uppercase}} Details</h2>
+      <div><span>id: </span>{{hero.id}}</div>
+      <div>
+        <label>name:
+          <input [(ngModel)]="hero.name" placeholder="name" />
+        </label>
+      </div>
+      <button (click)="goBack()" class="btn btn-outline-success">back</button>
+      <button (click)="save()" class="btn btn-outline-success" style="margin-left:98px;">save</button>
+    </div>
+  </div>
+</div>
